@@ -1,6 +1,15 @@
 public class Radio {
     private int radioSt;
     private int radioValue;
+    private int qualityRadioSt;
+
+    public Radio(int qualityRadioSt){
+        this.qualityRadioSt = qualityRadioSt - 1;
+    }
+
+    public Radio(){
+        this.qualityRadioSt = 9;
+    }
 
     public int getRadioSt() {
         return radioSt;
@@ -10,14 +19,14 @@ public class Radio {
         if (newRadioSt < 0) {
             return;
         }
-        if (newRadioSt > 9) {
+        if (newRadioSt > qualityRadioSt) {
             return;
         }
         radioSt = newRadioSt;
     }
 
     public void nextRadioSt() {
-        if (radioSt == 9) {
+        if (radioSt == qualityRadioSt) {
             radioSt = 0;
             return;
         }
@@ -26,7 +35,7 @@ public class Radio {
 
     public void prevRadioSt() {
         if (radioSt == 0){
-            radioSt = 9;
+            radioSt = qualityRadioSt;
             return;
         }
         radioSt--;
