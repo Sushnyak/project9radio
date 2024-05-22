@@ -21,27 +21,27 @@ public class Radio {
             radioSt = 0;
             return;
         }
-         radioSt++;
+        radioSt++;
     }
 
     public void prevRadioSt() {
-        if (radioSt == 0){
+        if (radioSt == 0) {
             radioSt = 9;
             return;
         }
         radioSt--;
     }
 
-    public int getRadioValue(){
+    public int getRadioValue() {
         return radioValue;
     }
 
-    public void setRadioValue(int newRadioValue){
-        if (newRadioValue > 100){
+    public void setRadioValue(int newRadioValue) {
+        if (newRadioValue > 100) {
             radioValue = 100;
             return;
         }
-        if (newRadioValue < 0){
+        if (newRadioValue < 0) {
             radioValue = 0;
             return;
         }
@@ -49,14 +49,14 @@ public class Radio {
     }
 
     public void upValue() {
-        if (radioValue == 100){
+        if (radioValue == 100) {
             return;
         }
         radioValue++;
     }
 
     public void downValue() {
-        if (radioValue == 0){
+        if (radioValue == 0) {
             return;
         }
         radioValue--;

@@ -4,7 +4,7 @@ import org.junit.jupiter.api.Test;
 public class RadioTest {
 
     @Test
-    public void shouldSetRadioStTest1(){
+    public void shouldSetRadioStTest1() {
         Radio radio = new Radio();
 
         radio.setRadioSt(7);
@@ -16,7 +16,7 @@ public class RadioTest {
     }
 
     @Test
-    public void shouldSetRadioStTest2(){
+    public void shouldSetRadioStTest2() {
         Radio radio = new Radio();
 
         radio.setRadioSt(10);
@@ -28,7 +28,7 @@ public class RadioTest {
     }
 
     @Test
-    public void shouldSetRadioStTest3(){
+    public void shouldSetRadioStTest3() {
         Radio radio = new Radio();
 
         radio.setRadioSt(-10);
@@ -40,7 +40,7 @@ public class RadioTest {
     }
 
     @Test
-    public void shouldSetNextRadioStTest1(){
+    public void shouldSetNextRadioStTest1() {
         Radio radio = new Radio();
 
         radio.nextRadioSt();
@@ -52,7 +52,7 @@ public class RadioTest {
     }
 
     @Test
-    public void shouldSetNextRadioStTest2(){
+    public void shouldSetNextRadioStTest2() {
         Radio radio = new Radio();
 
         radio.setRadioSt(9);
@@ -65,7 +65,7 @@ public class RadioTest {
     }
 
     @Test
-    public void shouldSetPrevRadioStTest1(){
+    public void shouldSetPrevRadioStTest1() {
         Radio radio = new Radio();
 
         radio.prevRadioSt();
@@ -77,7 +77,7 @@ public class RadioTest {
     }
 
     @Test
-    public void shouldSetPrevRadioStTest2(){
+    public void shouldSetPrevRadioStTest2() {
         Radio radio = new Radio();
 
         radio.setRadioSt(9);
@@ -90,7 +90,7 @@ public class RadioTest {
     }
 
     @Test
-    public void shouldUpRadioValueTest1(){
+    public void shouldUpRadioValueTest1() {
         Radio radio = new Radio();
 
         radio.upValue();
@@ -102,7 +102,7 @@ public class RadioTest {
     }
 
     @Test
-    public void shouldUpRadioValueTest2(){
+    public void shouldUpRadioValueTest2() {
         Radio radio = new Radio();
 
         radio.setRadioValue(100);
@@ -115,7 +115,7 @@ public class RadioTest {
     }
 
     @Test
-    public void shouldDownRadioValueTest1(){
+    public void shouldDownRadioValueTest1() {
         Radio radio = new Radio();
 
         radio.downValue();
@@ -127,7 +127,7 @@ public class RadioTest {
     }
 
     @Test
-    public void shouldDownRadioValueTest2(){
+    public void shouldDownRadioValueTest2() {
         Radio radio = new Radio();
 
         radio.setRadioValue(50);
@@ -140,7 +140,7 @@ public class RadioTest {
     }
 
     @Test
-    public void shouldSetRadioValueTest1(){
+    public void shouldSetRadioValueTest1() {
         Radio radio = new Radio();
 
         radio.setRadioValue(150);
@@ -152,7 +152,7 @@ public class RadioTest {
     }
 
     @Test
-    public void shouldSetRadioValueTest2(){
+    public void shouldSetRadioValueTest2() {
         Radio radio = new Radio();
 
         radio.setRadioValue(-100);
